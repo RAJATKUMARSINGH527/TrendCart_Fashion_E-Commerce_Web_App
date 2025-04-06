@@ -62,10 +62,11 @@
 
 .search-container form {
   display: flex;
-  width: 100%;
+  margin-left: 20px;
+  width: 95%;
   background-color: #f5f5f6;
   border-radius: 4px;
-  padding: 8px 10px;
+  padding: 10px 10px;
 }
 
 .search-container input {

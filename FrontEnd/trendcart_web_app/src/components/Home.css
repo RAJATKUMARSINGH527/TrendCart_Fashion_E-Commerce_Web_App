@@ -1,52 +1,75 @@
 .home-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.promo-banner {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.banner-image {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fashion-carnival-banner {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.banner-half {
+  position: relative;
+  width: 100%;
+
+}
+
+.half-banner-image {
+  width: 100%;
+  display: block;
+}
+
+.banner-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: #333;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.banner-button:hover {
+  background: #f0f0f0;
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+  }
+  
+  .banner-half {
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    margin-bottom: 20px;
   }
   
-  .promo-banner {
-    width: 100%;
-    position: relative;
-    margin-bottom: 2rem;
-  }
-  
-  .banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .banner-overlay {
-    position: absolute;
-    bottom: 20%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .banner-cta {
-    display: flex;
-    gap: 250px; /* Adjust based on your banner's button spacing */
-  }
-  
-  .banner-button {
-    background: white;
-    color: #333;
-    padding: 8px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .banner-button:hover {
-    background: #f0f0f0;
-    transform: translateY(-2px);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .banner-cta {
-      gap: 100px;
-    }
-  }
+}
