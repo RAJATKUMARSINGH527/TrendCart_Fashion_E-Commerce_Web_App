@@ -1,0 +1,52 @@
+.home-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .promo-banner {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner-cta {
+    display: flex;
+    gap: 250px; /* Adjust based on your banner's button spacing */
+  }
+  
+  .banner-button {
+    background: white;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .banner-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .banner-cta {
+      gap: 100px;
+    }
+  }
