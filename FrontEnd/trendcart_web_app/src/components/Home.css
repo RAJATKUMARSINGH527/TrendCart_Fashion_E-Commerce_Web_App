@@ -38,25 +38,75 @@
   display: block;
 }
 
+
 .banner-button {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  color: #333;
-  padding: 8px 24px;
-  border-radius: 20px;
+  top: 74%;
+  left: 55%;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: white;
+  color: #283593; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.banner-button:hover {
-  background: #f0f0f0;
-  transform: translateX(-50%) translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+.her-button {
+  left:31%;
+  padding: 0 10px 0 0;
+}
+
+.her-button .arrow-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #283593; 
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-left: 15px;
+
+}
+
+.her-button .icon-text {
+  margin-right: auto;
+  margin-left: 8px;
+}
+
+/* HIM button specific styles */
+.him-button {
+  padding: 0 0 0 10px;
+}
+
+.him-button .icon-text {
+  margin-left: auto;
+  margin-right: 8px;
+  
+}
+
+.him-button .arrow-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #283593; /* Exact blue color from your images */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 15px;
+
 }
 
 
