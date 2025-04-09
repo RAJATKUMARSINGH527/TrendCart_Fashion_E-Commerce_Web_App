@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../components/Navbar.css"; 
+import ProfileDropdown from './TrendCartProfile';
 
 const TrendCartLogo = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 512 166">
@@ -72,15 +73,21 @@ const Navbar = () => {
       </div>
       
       <div className="user-actions">
-        <a href="/profile" className="action-item">
-          <span className="action-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </span>
-          <span>Profile</span>
-        </a>
+        <div className="action-item profile-container">
+          <a href="/loginpage" id="profile-icon" className="profile-link">
+            <span className="action-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            <span>Profile</span>
+          </a>
+          <ProfileDropdown />
+      </div>
+  
+
+        
         
         <a href="/wishlist" className="action-item">
           <span className="action-icon">
